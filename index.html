@@ -1,18 +1,77 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Github-ribbon-element sample</title>
-	<script src="lib/polymer.min.js"></script>
-	<link rel="import" href="src/github-ribbon.html"/>
-	<style type="text/css">
-		body {
-			margin: 0;
-		}
-	</style>
+  <meta charset="UTF-8">
+  <title>Github-ribbon-element sample</title>
+  <script src="lib/polymer.min.js"></script>
+  <link rel="import" href="src/github-ribbon.html"/>
+  <style type="text/css">
+    body {
+      margin: 0;
+    }
+    .ribbon-container {
+      float: left;
+      position: relative;
+      height: 200px;
+      width: 200px;
+    }
+    .ribbon-container span {
+      position: absolute;
+      font-size: 20px;
+      bottom: 0;
+    }
+  </style>
 </head>
 <body>
-	<github-ribbon />
+  <div class="ribbon-container">
+    <github-ribbon owner="nbluis" repo="github-ribbon-element" color="green" corner="left"></github-ribbon>
+    <span>Left - green</span>
+  </div>
+  <div class="ribbon-container">
+    <github-ribbon owner="nbluis" repo="github-ribbon-element" color="red" corner="left"></github-ribbon>
+    <span>Left - red</span>
+  </div>
+  <div class="ribbon-container">
+    <github-ribbon owner="nbluis" repo="github-ribbon-element" color="darkblue" corner="left"></github-ribbon>
+    <span>Left - Darkblue</span>
+  </div>
+  <div class="ribbon-container">
+    <github-ribbon owner="nbluis" repo="github-ribbon-element" color="orange" corner="left"></github-ribbon>
+    <span>Left - Orange</span>
+  </div>
+  <div class="ribbon-container">
+    <github-ribbon owner="nbluis" repo="github-ribbon-element" color="gray" corner="left"></github-ribbon>
+    <span>Left - Gray</span>
+  </div>
+  <div class="ribbon-container">
+    <github-ribbon owner="nbluis" repo="github-ribbon-element" color="white" corner="left"></github-ribbon>
+    <span>Left - White</span>
+  </div>
+  <div class="ribbon-container">
+    <github-ribbon owner="nbluis" repo="github-ribbon-element" color="green" corner="right"></github-ribbon>
+    <span>Right - Green</span>
+  </div>
+  <div class="ribbon-container">
+    <github-ribbon owner="nbluis" repo="github-ribbon-element" color="red" corner="right"></github-ribbon>
+    <span>Right - Red</span>
+  </div>
+  <div class="ribbon-container">
+    <github-ribbon owner="nbluis" repo="github-ribbon-element" color="darkblue" corner="right"></github-ribbon>
+    <span>Right - Darkblue</span>
+  </div>
+  <div class="ribbon-container">
+    <github-ribbon owner="nbluis" repo="github-ribbon-element" color="orange" corner="right"></github-ribbon>
+    <span>Right - Orange</span>
+  </div>
+  <div class="ribbon-container">
+    <github-ribbon owner="nbluis" repo="github-ribbon-element" color="gray" corner="right"></github-ribbon>
+    <span>Right - Gray</span>
+  </div>
+  <div class="ribbon-container">
+    <github-ribbon owner="nbluis" repo="github-ribbon-element" color="white" corner="right"></github-ribbon>
+    <span>Right - White</span>
+  </div>
+
 </body>
 
 </html>
