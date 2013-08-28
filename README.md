@@ -1,6 +1,6 @@
 # &lt;github-ribbon&gt;
 
-Web Component wrapper for [Github Ribbons](https://github.com/blog/273-github-ribbons) using [Polymer](http://polymer-project.org/).
+Web Component wrapper for [Github Ribbons](https://github.com/blog/273-github-ribbons) using [Polymer](http://www.polymer-project.org/polymer.html).
 
 ## Usage
 
