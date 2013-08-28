@@ -2,6 +2,9 @@
 
 Web Component wrapper for [Github Ribbons](https://github.com/blog/273-github-ribbons) using [Polymer](http://www.polymer-project.org/polymer.html).
 
+## Demo
+> [Check it live](http://nbluis.github.io/github-ribbon-element/index.html).
+
 ## Usage
 
 1. Import Web Components' polyfill:
