@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Github-ribbon-element sample</title>
-  <script src="lib/polymer.min.js"></script>
+  <title>&lt;github-ribbon&gt;</title>
+
+  <!-- Importing Web Component's Polyfill -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20130816/polymer.min.js"></script>
+
+  <!-- Importing Custom Elements -->
   <link rel="import" href="src/github-ribbon.html"/>
-  <style type="text/css">
+
+  <style>
     body {
       margin: 0;
     }
@@ -23,6 +28,8 @@
   </style>
 </head>
 <body>
+
+  <!-- Using Custom Elements -->
   <div class="ribbon-container">
     <github-ribbon owner="nbluis" repo="github-ribbon-element" color="green" corner="left"></github-ribbon>
     <span>Left - green</span>
@@ -73,5 +80,4 @@
   </div>
 
 </body>
-
 </html>
