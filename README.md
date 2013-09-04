@@ -3,6 +3,7 @@
 Web Component wrapper for [Github Ribbons](https://github.com/blog/273-github-ribbons) using [Polymer](http://www.polymer-project.org/polymer.html).
 
 ## Demo
+
 > [Check it live](http://nbluis.github.io/github-ribbon-element/index.html).
 
 ## Usage
@@ -10,7 +11,7 @@ Web Component wrapper for [Github Ribbons](https://github.com/blog/273-github-ri
 1. Import Web Components' polyfill:
 
 	```html
-	<script src="lib/polymer.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20130816/polymer.min.js"></script>
 	```
 
 2. Import Custom Element:
