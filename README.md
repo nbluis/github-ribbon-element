@@ -11,7 +11,7 @@ Web Component wrapper for [Github Ribbons](https://github.com/blog/273-github-ri
 1. Import Web Components' polyfill:
 
 	```html
-	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.5.5/polymer.min.js"></script>
+  	<script src="//cdn.rawgit.com/webcomponents/webcomponentsjs/master/webcomponents-lite.js"></script>
 	```
 
 2. Import Custom Element:
