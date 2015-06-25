@@ -1,0 +1,30 @@
+{
+  "name": "github-ribbon-element",
+  "version": "1.0.0",
+  "homepage": "http://nbluis.github.io/github-ribbon-element/index.html",
+  "authors": [
+    "Eduardo Bohrer <nbluisrs@gmail.com>",
+    "Jorge del Casar <jorge.casar@gmail.com>"
+  ],
+  "description": "Web component wrapper for github ribbons using polymer",
+  "main": "src/github-ribbon.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "polymer",
+    "github",
+    "ribbon"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0"
+  }
+}

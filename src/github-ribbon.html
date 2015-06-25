@@ -1,19 +1,21 @@
-<polymer-element name="github-ribbon" attributes="owner repo corner color">
-
-  <template>
-    <a href="https://github.com/{{owner}}/{{repo}}">
-      <img src="https://s3.amazonaws.com/github/ribbons/forkme_{{corner}}_{{urlColor}}.png" alt="{{alt}}">
-    </a>
-
-    <style>
+<link rel="import" href="//cdn.rawgit.com/Polymer/polymer/master/polymer.html"/>
+<dom-module name="github-ribbon">
+  <style>
       img {
         position : absolute;
-        top      : 0;
         border   : 0;
-        left     : {{corner == 'left' ? '0' : 'auto'}};
-        right    : {{corner != 'left' ? '0' : 'auto'}};
+        top      : 0;
+        left     : 0;
       }
-    </style>
+      img.right {
+        left: auto;
+        right: 0;
+      }
+  </style>
+  <template>
+    <a href="{{githubHref(owner,repo)}}">
+      <img src="{{imageSrc(corner,color)}}" alt="{{alt}}" class$="{{corner}}">
+    </a>
   </template>
 
   <script type="text/javascript">
@@ -26,22 +28,49 @@
       'white'    : 'white_ffffff'
     };
 
-    Polymer('github-ribbon', {
-      user     : 'owner',
-      repo     : 'repo',
-      alt      : 'Fork me on GitHub',
-      corner   : 'right',
-      color    : 'green',
-
-      get urlColor() {
+    Polymer({
+      is: 'github-ribbon',
+      properties: {
+        owner: {
+          type: String,
+          value: 'owner'
+        },
+        repo: {
+          type: String,
+          value: 'repo'
+        },
+        alt: {
+          type: String,
+          value: 'Fork me on GitHub'
+        },
+        corner: {
+          type: String,
+          value: 'right'
+        },
+        color: {
+          type: String,
+          value: 'green'
+        },
+      },
+      urlColor: function() {
         var urlColor = colors[this.color];
 
         if (!urlColor)
           throw Error('Invalid color ' + this.color);
 
         return urlColor;
+      },
+      githubHref: function(owner, repo) {
+        return 'https://github.com/'+owner+'/'+repo;
+      },
+      imageSrc: function(corner, color) {
+        var urlColor = colors[color];
+        if (!urlColor)
+          throw Error('Invalid color ' + color);
+
+        return 'https://s3.amazonaws.com/github/ribbons/forkme_'+corner+'_'+urlColor+'.png';
       }
     });
   </script>
 
-</polymer-element>
+</dom-module>
